@@ -11,7 +11,7 @@ __clustering:__ Having multiple instances running the same service.
  
 __Problem Scenario:__
 
- ![Image 2]()
+ ![Image 1](./Images/AzFloatingIP_img1.jpg)
 
 Suppose I have clustered an internal App across multiple instances on the same virtual machine, and I am using an Azure load balancer as an ingress into my environment.
 
@@ -54,7 +54,7 @@ You configure floating Ips!
  
 Floating Ips enable you to use the same backend ports across multiple rules, by mapping the same frontend Ip configuration as the backend IP configuration.
 
-![Image 1]()
+![Image 2](./Images/AzFloatingIP_img2.jpg)
 
  
 In this scenario, rather than configure __VM 001__ backend pool to use Ip configuration with IP address: __10.0.0.5__
@@ -96,4 +96,4 @@ __VFP:__ Story for another day!
  
 __Can you make this scenario configuration work !__
 
-![Image 3]()
+![Image 3](./Images/AzFloatingIP_img3.jpg)
