@@ -1,50 +1,61 @@
-# Bash scripting syntax guide 
+# BASH scripting syntax guide 
 
-What is BASH
-A shell, language, or command line interpreter?
-What is a shell?
+__What is BASH__
 
-What makes bash different from other programming language? its similarities and limitations?
-What of the other data types like arrays and co. 
+Bash is a Unix shell that interprets command-line input and provides a scripting language for automating system tasks.
+
+__What makes bash different from other programming language?__
+
+Bash is fundamentally different from general-purpose programming languages because it is designed to orchestrate programs, not to build standalone applications.
+
+At its core, Bash excels at gluing together existing system tools, managing processes, and automating operating-system tasks rather than implementing complex algorithms.
+
 
 ## Declaring Variables
 
 ```bash
+# store the value "foo" in the variable var
 var="foo"
+
+# Print the content of the variable to STDOUT
 echo $var
 ```
-#### Difference between using quotes and not using quotes when declaring a variable
-content
 
-Capturing the output of a command and saving as variable
+__Capturing the output of a command and saving as variable__
 
+```bash
+#store the output of the ls command in the ls_contents variable
 ls_contents=$(ls)
-echo ls_contents
+echo $ls_contents
+```
 
-Math/Arithmetic
-===
-Evaluate expression -- similar to python
+## Math/Arithmetic
+
+```bash
+#Evaluate expression an expression
+#You can use the standard arithmetic expression with the expr command.
+
 expr 30 + 40
 
-Except, for multiplication:
+#Except for multiplication:
 expr 100 \* 4
+```
+## Conditional statements
 
-Conditional statements
-===
+```bash
 If statements syntax
 
 if [ condition ]
 then 
 	action 
 fi 
-
+```
 
 Exit codes
 ===
 Helps you determine if a command was successful or not
 
-$?
-If echo $? returns 0 that is success, else failure
+$? If echo ?$ $ returns 0 that is success, else failure $
 
 exit [code]  -- set exit code
 
