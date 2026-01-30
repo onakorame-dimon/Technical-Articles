@@ -157,6 +157,32 @@ for current_number in {1..10}
 		sleep 1
 done 
 echo "This is the end of the loop"
+
+#C-style for loop. 
+#The above for loop syntax cannot be used with variables.
+#It is called C-style due to its similarity to the C language for loop syntax. 
+
+for (( INITIALIZATION ; CONDITION ; UPDATE ))
+do
+  commands
+done
+
+
+#Example: 
+
+start=1
+stop=10
+
+for ((i=$start; i<=$stop; i++))
+	do 
+		echo $i
+	done
+#The $ symbol before the variable name can be ignored as variables are expanded in arithmetic context.
+
+for ((i=start; i<=stop; i++))
+	do 
+		echo $i
+	done
 ```
 
 __until loop__
