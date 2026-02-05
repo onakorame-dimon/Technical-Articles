@@ -158,9 +158,11 @@ for current_number in {1..10}
 done 
 echo "This is the end of the loop"
 
-#C-style for loop. 
-#The above for loop syntax cannot be used with variables.
-#It is called C-style due to its similarity to the C language for loop syntax. 
+# C-style for loop
+# Named for its similarity to the C language for-loop syntax.
+# This syntax is more flexible than the previous one because it supports the use of variables.
+
+ 
 
 for (( INITIALIZATION ; CONDITION ; UPDATE ))
 do
