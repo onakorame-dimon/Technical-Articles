@@ -16,6 +16,11 @@
 * [securing-AWS-root-user](aws/securing-aws-root-user.md)
 * [IAM-basics-AWS](aws/iam-basics-aws.md)
 
+## Iac 
+
+* [Markdown cheatsheet](Iac/Markdown%20cheatsheet.md)
+* [Vagrant cheatsheet](Iac/Vagrant%20cheatsheet.md)
+
 ## NETWORKING
 
 * [APIPA (Automatic Private IP Addressing)](networking/apipa.md)
