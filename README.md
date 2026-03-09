@@ -18,7 +18,7 @@ If anything here looks interesting, you can check out:
 
 ### Projects
 
-<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td>BASH Multiplication Table</td><td><a href="projects/bash-multiplication-table.md">bash-multiplication-table.md</a></td></tr><tr><td>Ansible Labs</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>BASH Multiplication Table</td><td><a href="projects/bash-multiplication-table.md">bash-multiplication-table.md</a></td><td><a href=".gitbook/assets/bash_multp_table_logo.png">bash_multp_table_logo.png</a></td></tr><tr><td>Ansible Labs</td><td><a href="projects/ansible-labs.md">ansible-labs.md</a></td><td><a href=".gitbook/assets/ansible_logo_icon_145495.png">ansible_logo_icon_145495.png</a></td></tr></tbody></table>
 
 ### Articles
 

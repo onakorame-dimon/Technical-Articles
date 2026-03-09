@@ -37,4 +37,5 @@
 
 ## PROJECTS
 
+* [Ansible Labs](projects/ansible-labs.md)
 * [BASH Multiplication Table](projects/bash-multiplication-table.md)
