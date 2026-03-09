@@ -24,7 +24,7 @@ Here's where Ansible comes in.
 
 ## Ansible Architecture
 
-![Ansible Architecture]()
+![Ansible Architecture](../Images/ansible_img/ansible-architecture.png)
 
 
 **Control Node**
@@ -75,21 +75,61 @@ The inventory defines the hosts that Ansible manages.
 It lists contains the managed devices, and it allows you to  organize them into groups, which let playbooks to target specific machines based on the group they belong.
 
 
-## Playbook Illustrated 
+## Example Inventory  
 
-![Ansilbe Inventory]()
+__Ansible Inventory__
 
-![Ansible Playbook]()
+The Ansible inventory can be writen in [YAML](https://en.wikipedia.org/wiki/YAML) or [INI](https://en.wikipedia.org/wiki/INI_file) format
 
+__Inventory file in INI format__
+```ini
+[webservers]
+web1 ansible_host=192.168.56.10
+web2 ansible_host=192.168.56.11
+
+[dbservers]
+db1 ansible_host=192.168.56.20
+```
+
+In the above configuration, **[webservers]** and **[dbservers]** are groups. Hosts placed under them belong to that group
+
+__Inventory file in YAML format__
+
+```yaml
+
+all:
+  children:
+    webservers:
+      hosts:
+        web1:
+          ansible_host: 192.168.56.10
+        web2:
+          ansible_host: 192.168.56.11
+
+    dbservers:
+      hosts:
+        db1:
+          ansible_host: 192.168.56.20
+```
+
+In the preceeding YAML file **all** is the root group, **children** defines subgroups. **hosts** lists the machines in each group
+
+## Playbook Illustrated
+
+__Ansible Playbook__
+
+The below Image shows the contents of a playbook used to automate the creation of users on a Linux system
+
+![Ansible Playbook](../Images/ansible_img/playbook.png)
 
 
 ## Further Learning
 
 This article is meant to be a bird's eye view of Ansible and its typical usage. 
 
-For a more detailed undertanding of how to use Ansilbe, you can check out the below course.
+For a more detailed course on Ansible, check out this video series: [Ansible 101 with Jeff Geerling](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN)
 
-And for hands on practice, get you hands dirty by trying the these labs for yourself:
+And for hands on practice, get you hands dirty by trying out these labs: [Ansible Labs](../../ansible-labs/README.md)
 
 
-__Stay Passionate !__ :smiley: :sparkles: :sparkles: (EMOJI)
+__Stay Passionate !__ :smiley: :sparkles: :sparkles:
