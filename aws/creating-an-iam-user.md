@@ -18,6 +18,10 @@ IAM allows you to create users, and each person who needs access to your AWS acc
 
 An IAM user represents a person or service that interacts with AWS. You define the user in your AWS account.
 
+IAM users have credentials for authentication and associated policies for authorization to AWS resources
+
+<figure><img src="../.gitbook/assets/IAM user.png" alt=""><figcaption></figcaption></figure>
+
 AWS IAM provides both **Authentication** and **Authorization.**
 
 **Authentication** verifies that someone is who they say they are by checking their credentials.
@@ -28,23 +32,36 @@ After logging in, **Authorization** determines which actions you can perform in 
 
 IAM policies are JSON-based documents that define permissions. IAM policies can also be attached to a group of users using **IAM groups**
 
+```json
+Example IAM policy
+{
+  "Version":"2012-10-17",		 	 	 
+  "Statement": {
+    "Effect": "Allow",
+    "Action": "s3:ListBucket",
+    "Resource": "arn:aws:s3:::amzn-s3-demo-bucket"
+  }
+}
+
+```
+
 **IAM groups**
 
 IAM groups are a grouping of IAM users. Instead of creating and attaching multiple policies to individual users, IAM groups let you attach a single policy to a group of users who need the same access.
 
+<figure><img src="../.gitbook/assets/IAM group.png" alt=""><figcaption></figcaption></figure>
+
 ## Tying it all together
 
-IAM user, IAM Group
-
-Auth ---------- Auth
+<figure><img src="../.gitbook/assets/tying it all together.png" alt=""><figcaption></figcaption></figure>
 
 ## Why create an IAM user when I need administrator privileges? Can’t I use the root user?
 
 Some tasks require administrator-level access, and you might be tempted to use the root user, but using the root user for everyday tasks is risky. Root credentials are too powerful, and you shouldn't share the root username or password with tools or people.
 
-An IAM user with admin credentials also needs strong protection — especially MFA — because an IAM user with admin privileges can still cause serious damage if compromised.
+An IAM user with admin credentials also needs strong protection because an IAM user with admin privileges can still cause serious damage if compromised.
 
-The key reason for using an IAM user is control. You can’t attach policies to the root user, but you can to an IAM user. That makes it possible to apply the principles: don't privilege — work with only the permissions needed to get a job done, and nothing more.
+The key reason for using an IAM user is control. You can’t attach policies to the root user, but you can to an IAM user. That makes it possible to apply the principle of least privilege, which requires working with only the permissions needed to get a job done, and nothing more.
 
 Now that we have explored some basic jargon regarding IAM, let us create an IAM user to administer other IAM users.
 
@@ -118,7 +135,7 @@ Since we have not created any group, we create a new group.
 
 ![Set perm create group](../.gitbook/assets/set_perm.jpg)
 
-Choose a descriptive user name for your group name. In this case, since I want to create an IAM user with administrator privileges, I have chosen the group name: admin.
+Choose a descriptive name for the group. In this case, since I want to create an IAM user with administrator privileges, I have chosen the group name "admin."
 
 Next, we attach a policy (which defines the permissions for members of the group)
 
@@ -146,15 +163,15 @@ User is successfully created. Remember to copy the password to use for initial s
 
 ![User created](../.gitbook/assets/user_created.jpg)
 
-Also, copy the Account ID (The 12 digit number in the form: xxxx-xxxx-xxxx) located at the top right corner of the screen.
+Also, copy the Account ID (the 12-digit number in the form: xxxx-xxxx-xxxx) located in the top-right corner of the screen.
 
-While the Account ID's are not secrets or credentials that can be used to access AWS resources, it is best practice not to publicly display them.
+While the Account IDs are not secrets or credentials that can be used to access AWS resources, it is best practice not to publicly display them.
 
 **Step 5**
 
 Sign in using IAM user credentials
 
-In the console sign in page, choose sign in with IAM user.
+In the console sign-in page, choose sign in with IAM user.
 
 You can refer to **Step 1** to view how to get there.
 
@@ -168,7 +185,7 @@ Input the credentials of the IAM user created. Including the password provided e
 
 ![IAM sign in b](../.gitbook/assets/IAM_sign_in_b.jpg)
 
-After signing in, we are prompted to change our password. This is because of the option we choose when creating the IAM user.
+After signing in, we are prompted to change our password. This is because of the option we chose when creating the IAM user.
 
 Choose a secure password for the IAM user.
 

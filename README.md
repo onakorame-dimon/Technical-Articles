@@ -28,4 +28,4 @@ Some posts are quick references, others are deeper dives into things I found con
 
 Check out some of these interesting Articles:
 
-<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td>Creating an IAM user</td><td><a href="aws/creating-an-iam-user.md">creating-an-iam-user.md</a></td></tr><tr><td>System Boot up Process</td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td>Creating an IAM user</td><td><a href="aws/creating-an-iam-user.md">creating-an-iam-user.md</a></td></tr><tr><td>Azure Load Balancer Floating IP</td><td><a href="azure/azure-lb-floating-ip.md">azure-lb-floating-ip.md</a></td></tr><tr><td>Ansible</td><td><a href="Iac/Ansible.md">Ansible.md</a></td></tr><tr><td>APIPA</td><td><a href="networking/apipa.md">apipa.md</a></td></tr></tbody></table>

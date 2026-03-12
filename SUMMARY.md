@@ -6,8 +6,8 @@
 
 ## AZURE
 
-* [Identity-basics-Azure](azure/identity-basics-azure.md)
 * [Azure Load Balancer Floating IP](azure/azure-lb-floating-ip.md)
+* [Identity-basics-Azure](azure/identity-basics-azure.md)
 
 ## AWS
 
@@ -24,10 +24,6 @@
 ## NETWORKING
 
 * [APIPA (Automatic Private IP Addressing)](networking/apipa.md)
-
-## CONTAINERIZATION
-
-* [Page 6](containerization/page-6.md)
 
 ## LINUX
 
