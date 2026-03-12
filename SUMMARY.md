@@ -3,7 +3,6 @@
 ## 👋 WELCOME!
 
 * [whoami](README.md)
-* [Technical-Articles](welcome/readme.md)
 
 ## AZURE
 
