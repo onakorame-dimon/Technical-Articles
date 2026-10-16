@@ -7,7 +7,7 @@ Which architectural style best describes this application?
 
 - [ ] Microservices architecture
 - [ ] Monolithic architecture 
-- [ ]Something else
+- [ ] Something else
 
 
 When I first saw this architecture, the answer seemed straightforward. My first thought was, "Yes, this is no doubt a microservices architecture."
