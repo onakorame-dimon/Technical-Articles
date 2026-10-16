@@ -31,6 +31,9 @@
 * [BASH scripting syntax guide](linux/bash-guide.md)
 * [Regex Cheatsheet](linux/regex-cheatsheet.md)
 
+## SYSTEM DESIGN
+* [Microservice or not microservice](system-design/microservices-or-not.md)
+
 ## PROJECTS
 
 * [Ansible Labs](projects/ansible-labs.md)
