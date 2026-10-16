@@ -1,7 +1,7 @@
 Microservices or Not Microservices?
 ---
 
-![image1]()
+![image1](../Images/microservice_img/microservice-01.png)
 
 Which architectural style best describes this application?
 
@@ -64,7 +64,7 @@ This is why our frontend, API, and worker design does not typically fit the micr
 
 An application designed around business capabilities might look something like this:
 
-![image2]()
+![image2](../Images/microservice_img/microservice-02.png)
 
 Unlike the former architecture, each of these services represents a meaningful area of business functionality.
 
