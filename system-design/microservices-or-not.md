@@ -5,9 +5,9 @@ Microservices or Not Microservices?
 
 Which architectural style best describes this application?
 
-- [] Microservices architecture
-- [] Monolithic architecture 
-- [] Something else
+- [ ] Microservices architecture
+- [ ] Monolithic architecture 
+- [ ]Something else
 
 
 When I first saw this architecture, the answer seemed straightforward. My first thought was, "Yes, this is no doubt a microservices architecture."
